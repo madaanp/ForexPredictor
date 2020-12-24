@@ -12,7 +12,7 @@ from sklearn.preprocessing import PolynomialFeatures
 
 def read_dataset():
     #Reading values from csv file 
-    df = pd.read_csv("CurrencyPredictionData.csv") 
+    df = pd.read_csv("currency_prediction_data_set.csv") 
     input_values = np.array(df.iloc[:,0]); 
     input_values = input_values.reshape(-1,1)
     output_values = np.array(df.iloc[:,1]); 
